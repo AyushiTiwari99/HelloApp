@@ -4,16 +4,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../redux/counterSlice';
 import { RootState } from '../redux/store';
 
-export default function HomeScreen() {
+export default function SettingsScreen() {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+      <Text style={styles.title}>Settings</Text>
 
       <Text style={styles.description}>
-        This is the Home screen
+        This is the Settings screen
       </Text>
 
       <Text style={styles.count}>
